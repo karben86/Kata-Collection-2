@@ -3,7 +3,7 @@
 const every = (list, predicate) => {
   if (list.length === 0) return false;
   let isTrue = true;
-  for (item of list){
+  for (let item of list) {
     isTrue = isTrue && predicate(item);
   }
   return isTrue;
@@ -12,7 +12,7 @@ const every = (list, predicate) => {
 const contains = (list, value) => {
   if (list.length === 0) return false;
   let isTrue = false;
-  for (item of list){
+  for (let item of list) {
     if (item === value) isTrue = true;
   }
   return isTrue;
@@ -21,7 +21,7 @@ const contains = (list, value) => {
 const some = (list, predicate) => {
   if (list.length === 0) return false;
   let isTrue = false;
-  for (item of list){
+  for (let item of list) {
     if (predicate(item)) isTrue = true;
   }
   return isTrue;
