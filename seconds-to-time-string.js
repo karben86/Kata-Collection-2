@@ -14,7 +14,7 @@ const secondsToTimeString = (seconds) => {
       // Each time unit in the end result is separated by a comma and a space i.e. 2 days, 1 hour so we concatenate this to the previous result as well as
       // the full unit of time calculated above (calc) as well as the name of that unit (time).
       // When we have more than one full unit of the current time than we add an s to the current time i.e. 2 year becomes 2 years
-      resultStr += `, ${calc} ${time}${'s'.repeat(!!(calc > 1))}`;
+      resultStr += `, ${calc} ${time}${'s'.repeat(calc > 1)}`;
 
       // Since we have now dealt with all the full units of time that can be extracted from the current amount of seconds we want to move on to the next time unit.
       // This is done by looking at the remainder of the above calculation and passing this back to the seconds variable so that next time the for in loop runs we
