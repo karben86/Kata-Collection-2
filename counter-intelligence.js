@@ -1,6 +1,5 @@
 // Please do not change the name of this function
 const counterIntelligence = (str) => {
-  
   // Here we set up a key that works out how much we need to subtract from the character code of each character.
   // The cipher is always based on the last character which is always X so we need to find the character code of the final character
   // and then subtract the character code for X which is 88.
@@ -16,18 +15,18 @@ const counterIntelligence = (str) => {
   // comma separated values.
   // The actual calculation is done by taking the string and splitting it into separate characters which is then mapped to deal with
   // each character separately.
-  return String.fromCharCode(...str.split("").map(
+  return String.fromCharCode(...str.split('').map(
 
     // Since we only want to convert character that are letters but leave spaces and punctuations in their original format we first
     // need to check whether the current character is a valid letter.
-    char => (/\w/.test(char)) ?
+    char => (/\w/.test(char))
 
     // If so we check its position in the alphabet as explained above and add 65 (the starting point of upper case letters) to get
     // the final character code
-    (char.charCodeAt(0) - key) % 26 + 65 :
+      ? (char.charCodeAt(0) - key) % 26 + 65
 
-    // If the character should be left unchanged then we return its character code without any manipulation. 
-    char.charCodeAt(0)));
+    // If the character should be left unchanged then we return its character code without any manipulation.
+      : char.charCodeAt(0)));
 };
 
 module.exports = { counterIntelligence };
