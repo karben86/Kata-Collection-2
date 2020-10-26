@@ -4,7 +4,7 @@ const counterIntelligence = (str) => {
   // The cipher is always based on the last character which is always X so we need to find the character code of the final character
   // and then subtract the character code for X which is 88.
   // Since we want to subtract the key value from the current character code later on in the cipher and also want to wrap this around
-  // the upper case character codes it is advantage if we subtract an additional 13 positions at this stage such that we can use the
+  // the upper case character codes it is advantageouss if we subtract an additional 13 positions at this stage such that we can use the
   // modulo operator later on to check whether the result is divisisble by 26 (the length of the alphabet).
   // I.e. the character A is 65 but for the purpose of this exercise it is easier to transform it to 52 by subtracting 13 which is
   // the closest multiple of 26 such that A corresponds to 0 (52 % 26), B corresponds to 1 (53 % 26) and so on.
