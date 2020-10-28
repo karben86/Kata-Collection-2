@@ -27,5 +27,8 @@
     "husky": "^0.14.3",
     "jest": "^26.5.3"
   },
-  "homepage": "https://github.com/northcoders/CORE-B1-katas#readme"
+  "homepage": "https://github.com/northcoders/CORE-B1-katas#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
