@@ -2,29 +2,26 @@
 
 const every = (list, predicate) => {
   if (list.length === 0) return false;
-  let isTrue = true;
   for (let item of list) {
-    isTrue = isTrue && predicate(item);
+    if (!predicate(item)) return false;
   }
-  return isTrue;
+  return true;
 };
 
 const contains = (list, value) => {
   if (list.length === 0) return false;
-  let isTrue = false;
   for (let item of list) {
-    if (item === value) isTrue = true;
+    if (item === value) return true;
   }
-  return isTrue;
+  return false;
 };
 
 const some = (list, predicate) => {
   if (list.length === 0) return false;
-  let isTrue = false;
   for (let item of list) {
-    if (predicate(item)) isTrue = true;
+    if (predicate(item)) return true;
   }
-  return isTrue;
+  return false;
 };
 
 module.exports = {
