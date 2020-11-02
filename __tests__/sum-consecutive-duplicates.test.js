@@ -1,4 +1,4 @@
-const { sumConsecutiveDuplicates } = require('../sum-consecutive-duplicates');
+const { sumConsecutiveDuplicates, reduceConsecutives } = require('../sum-consecutive-duplicates');
 
 describe('sumConsecutiveDuplicates()', () => {
   it('', () => {
@@ -12,5 +12,11 @@ describe('sumConsecutiveDuplicates()', () => {
   });
   it('', () => {
     expect(sumConsecutiveDuplicates([1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1])).toEqual([2, 2, 4, 2, 3])
+  });
+});
+
+describe('reduceConsecutives()', () => {
+  it('', () => {
+    expect(reduceConsecutives([1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1])).toEqual([8, 2, 3])
   });
 });

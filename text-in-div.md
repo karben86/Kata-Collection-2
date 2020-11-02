@@ -8,38 +8,38 @@ Your function should divide the given text into lines using newline characters. 
 
 ```javascript
 const str =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec consectetur risus. Cras vel urna a tellus dapibus consequat. Duis bibendum tincidunt viverra. Phasellus dictum efficitur sem quis porttitor. Mauris luctus auctor diam id ultrices. Praesent laoreet in enim ut placerat. Praesent a facilisis turpis.'
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec consectetur risus. Cras vel urna a tellus dapibus consequat. Duis bibendum tincidunt viverra. Phasellus dictum efficitur sem quis porttitor. Mauris luctus auctor diam id ultrices. Praesent laoreet in enim ut placerat. Praesent a facilisis turpis.";
 ```
 
 ```javascript
-textInDiv('A', 1)
+textInDiv("A", 1);
 // -> "INVALID INPUT"
 ```
 
 ```javascript
-textInDiv('Northcoders', 15)
+textInDiv("Northcoders", 15);
 // -> "Northcoders"
 ```
 
 ```javascript
-textInDiv('Northcoders Coding Bootcamp', 15)
+textInDiv("Northcoders Coding Bootcamp", 15);
 // -> "Northcoders/n
 //     Coding Bootcamp"
 ```
 
 ```javascript
-textInDiv('Northcoders Coding Bootcamp', 20)
+textInDiv("Northcoders Coding Bootcamp", 20);
 // -> "Northcoders Coding\n
 //     Bootcamp"
 ```
 
 ```javascript
-textInDiv('Northcoders Coding Bootcamp', 30)
+textInDiv("Northcoders Coding Bootcamp", 30);
 // -> "Northcoders Coding Bootcamp"
 ```
 
 ```javascript
-textInDiv(str, 50)
+textInDiv(str, 50);
 /* -> "Lorem ipsum dolor sit amet, consectetur adipiscing\n
         elit. Aliquam nec consectetur risus. Cras vel urna\n
         a tellus dapibus consequat. Duis bibendum\n
@@ -51,7 +51,7 @@ textInDiv(str, 50)
 ```
 
 ```javascript
-textInDiv(str, 30)
+textInDiv(str, 30);
 /* -> "Lorem ipsum dolor sit amet,\n
         consectetur adipiscing elit.\n
         Aliquam nec consectetur risus.\n
