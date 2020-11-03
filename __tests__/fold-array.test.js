@@ -8,7 +8,7 @@ describe('foldArray()', () => {
     expect(foldArray([1, 2, 3], 1)).toEqual([4, 2]);
   })
   it('', () => {
-    expect(foldArray([1,2,3,4,5], 1)).toEqual([6,6,3]);
+    expect(foldArray([1, 2, 3, 4, 5], 1)).toEqual([6, 6, 3]);
   })
   it('', () => {
     expect(foldArray([1, 2, 3, 10, 34, 100], 1)).toEqual([101, 36, 13]);
