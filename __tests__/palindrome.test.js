@@ -1,13 +1,13 @@
 const { palindrome } = require('../palindrome')
 
 describe('palindrome()', () => {
-  it('', () => {
+  it(`palindrome('cat') should return false`, () => {
     expect(palindrome('cat')).toBe(false)
   })
-  it('', () => {
+  it(`palindrome('Acrobats stab orca') should return true`, () => {
     expect(palindrome('Acrobats stab orca')).toBe(true)
   })
-  it('', () => {
+  it(`palindrome('Are we not drawn onward to new era') should return true`, () => {
     expect(palindrome('Are we not drawn onward to new era')).toBe(true)
   })
 })
