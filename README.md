@@ -1,4 +1,4 @@
-## collection of katas solved during the Northcoders course:
+## Collection of katas solved during the Northcoders course:
 
 1. everyContainsSome
 2. passwordScore
