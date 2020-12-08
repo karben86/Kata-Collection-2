@@ -6,7 +6,7 @@ const secondsToTimeString = (seconds) => {
   let calc = 0;
 
   // looping throug the secondsObj to look up whether each category is relevant to the current scenario
-  for (var time in secondsObj) {
+  for (let time in secondsObj) {
     // Only includes the current time unit if the amount of seconds left over is more than the time unit converted to seconds
     if (seconds >= secondsObj[time]) {
       // When we include a time unit we only want to show full units i.e. 3 days or 1 month etc. Therefore any amount leftover is truncated i.e. 4.12 hours becomes 4 hours.
